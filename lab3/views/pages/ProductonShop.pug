@@ -1,0 +1,34 @@
+extends ../layout
+
+block content 
+    h3 Товар в магазинах
+    form(class="form-inline")
+        div(class="form-group")
+            label ID
+            input(type="number" class="form-control" id="inputId")
+        div(class="form-group")
+            label Магазин
+            input(type="text" class="form-control" id="inputShops")
+        div(class="form-group")
+            label Товар
+            input(type="number" class="form-control" id="inputGoods")
+        button(type="submit" class="btn btn-primary" id="createGoodstoStationButton") Додати
+    table(id="goodstoStationsList" class="table table-bordered table-hover")
+        thead
+            th ID
+            th Магазин
+            th Товар
+            th Видалити
+        tbody
+    button(type="submit" class="btn btn-primary" id="ShowLessThen20") Показати
+    table(id="goodstoStationsListLessThen20" class="table table-bordered table-hover")
+        thead
+            th(id="StationId") ID
+            th(id="StationName") Назва
+            th(id="StationNecessity") Адрреса
+            th(id="StationCapacity") Місткість
+            
+        tbody
+
+block append scripts
+    script(src='/public/js/ProductonShop')

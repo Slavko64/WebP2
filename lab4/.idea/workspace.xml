@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d9c18d3-0124-4313-a9fe-9505d3f879bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/lab4Angular/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab4Angular/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4Angular/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab4Angular/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4Angular/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/lab4Angular/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4Angular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lab4Angular/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4Angular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4Angular/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4Angular/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4Angular/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lab4Angular/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4Angular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lab4Angular/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4Angular/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lab4Angular/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4Angular/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/lab4Angular/src/styles.css" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/lab4Angular" />
+  </component>
+  <component name="ProjectId" id="1cSkzjGHRb0iuyI253fEaz4BKe5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../course work/excursions/excursions" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\user\Desktop\labsWebs\variant5Lab4\lab4Angular\node_modules\typescript\lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d9c18d3-0124-4313-a9fe-9505d3f879bc" name="Default Changelist" comment="" />
+      <created>1590529645911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590529645911</updated>
+      <workItem from="1590529647404" duration="8375000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

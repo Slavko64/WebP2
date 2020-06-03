@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+    h3 Товари на складі
+    form(class="form-inline")
+        div(class="form-group")
+            label ID
+            input(type="number" class="form-control" id="inputId")
+        div(class="form-group")
+            label Склад
+            input(type="text" class="form-control" id="inputPlanet")
+        div(class="form-group")
+            label Товар
+            input(type="number" class="form-control" id="inputGoods")
+        button(type="submit" class="btn btn-primary" id="createGoodstoPlanetButton") Додати
+    table(id="goodstoPlanetsList" class="table table-bordered table-hover")
+        thead
+            th ID
+            th Склад
+            th Товар
+            th Видалити
+        tbody
+
+
+block append scripts
+    script(src='/public/js/ProductonStocks.js')
+    script(src='/public/js/ProductonStocksLessThen20.js')

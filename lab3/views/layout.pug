@@ -1,0 +1,23 @@
+include ./mixins/navbar
+
+doctype html
+html
+  head
+    title Lab3
+    block styles
+      link(rel='stylesheet' href='/public/css/main.css')
+      link(rel="stylesheet" href="/public/css/bootstrap.min.css")
+  body
+    +nav(Lab3, 'main_menu')
+        +nav_item( '/' ) Домашня сторінка
+        +nav_item( '/shops' ) Магазини
+        +nav_item( '/products' ) Товари
+        +nav_item( '/stocks' ) Склади
+        +nav_item( '/ProductonStocks' ) Товари на складі
+        +nav_item( '/ProductonShop' ) Товари в магазині
+    div.main.container
+        block content
+    block scripts
+        script(src="/public/js/script/jquery-3.1.1.min.js")
+        script(src="/public/js/script/bootstrap.min.js")
+        script(src='/public/js/main.js')

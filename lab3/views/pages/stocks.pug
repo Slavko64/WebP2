@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+    h3 Склади
+    form(class="form-inline")
+        div(class="form-group")
+            label ID
+            input(type="number" class="form-control" id="inputId")
+        div(class="form-group")
+            label Номер
+            input(type="number" class="form-control" id="inputNumber")
+        div(class="form-group")
+            label Магазин
+            input(type="text" class="form-control" id="inputShop")
+        div(class="form-group")
+            label Місткість
+            input(type="number" class="form-control" id="inputCapacity")
+        button(type="submit" class="btn btn-primary" id="createStocksButton") Додати
+    form(class="form-inline")
+        div(class="form-group")
+            label Знайти за id
+            input(type="number" class="form-control 1" id="inputWhatToFind")
+        button(type="submit" class="btn btn-primary" id="findStocksButton") Знайти
+    table(id="stocksList" class="table table-bordered table-hover")
+        thead
+            th ID
+            th Номер
+            th Магазин
+            th Місткість
+            th Видалити
+            th Редагувати
+        tbody
+
+block append scripts
+    script(src='/public/js/stocks.js')

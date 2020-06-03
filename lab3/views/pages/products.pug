@@ -1,0 +1,36 @@
+extends ../layout
+
+block content
+    h3 Товари
+    form(class="form-inline")
+        div(class="form-group")
+            label ID
+            input(type="number" class="form-control" id="inputId")
+        div(class="form-group")
+            label Код
+            input(type="number" class="form-control" id="inputCode")
+        div(class="form-group")
+            label Назва
+            input(type="text" class="form-control" id="inputName")
+        div(class="form-group")
+            label Країна виробник
+            input(type="text" class="form-control" id="inputCountry")
+
+    button(type="submit" class="btn btn-primary" id="createProductButton") Додати
+    form(class="form-inline")
+        div(class="form-group")
+            label Знайти за id
+            input(type="number" class="form-control" id="inputWhatToFind")
+        button(type="submit" class="btn btn-primary" id="findProductButton") Знайти
+    table(id="productsList" class="table table-bordered table-hover")
+        thead
+            th ID
+            th Код
+            th Назва
+            th Країна виробник
+            th Видалити
+            th Редагувати
+        tbody
+
+block append scripts
+    script(src='/public/js/products.js')

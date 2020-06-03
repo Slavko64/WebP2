@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+    h3 Магазини
+    form(class="form-inline")
+        div(class="form-group")
+            label ID
+            input(type="number" class="form-control" id="inputId")
+        div(class="form-group")
+            label Назва
+            input(type="text" class="form-control" id="inputName")
+        div(class="form-group")
+            label Адресса
+            input(type="text" class="form-control" id="inputAddress")
+        div(class="form-group")
+            label Місткість
+            input(type="number" class="form-control" id="inputCapacity")
+    button(type="submit" class="btn btn-primary" id="createShopsButton") Додати
+    form(class="form-inline")
+        div(class="form-group")
+            label Знайти за id
+            input(type="number" class="form-control" id="inputWhatToFind")
+        button(type="submit" class="btn btn-primary" id="findShopsButton") Знайти
+    table(id="shopsList" class="table table-bordered table-hover")
+        thead
+            th ID
+            th Назва
+            th Адресса
+            th Місткість
+            th Видалити
+            th Регагувати
+        tbody
+
+block append scripts
+    script(src='/public/js/shops.js')
