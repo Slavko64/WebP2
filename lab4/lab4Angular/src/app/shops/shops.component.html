@@ -1,0 +1,46 @@
+<div class="mainForm text-center">
+  <form #newShop="ngForm" class='' (ngSubmit)="addNewShop()">
+    <div>
+      <label >Name
+        <input name='name'  class='form-control' value='' type="text" [(ngModel)]="newShopItem.name">
+      </label>
+    </div>
+
+    <br>
+    <div>
+      <label >Address
+        <input name='address'  class='form-control' value='' type="text" [(ngModel)]="newShopItem.address">
+      </label>
+    </div>
+
+    <br>
+    <button type='submit' class='btn btn-primary'>Create</button>
+  </form>
+
+
+</div>
+<h3 class="text-center">
+  All Shops
+</h3>
+<div *ngFor="let shop of shops; index as i;" class="singleShop">
+  <h6>{{shop._id}}</h6>
+  <div>
+    <h3>Магазин "{{shop.name}}" та адрес - {{shop.address}} </h3>
+    <form (ngSubmit)="deleteShop(shop._id)">
+      <button type='submit' class='btn btn-warning'>Delete</button>
+    </form> <button (click)="show(i)" type="submit" class="btn btn-primary">Edit</button>
+    <form #edit="ngForm" (ngSubmit)="editShop(shop._id)" *ngIf="i === showId" >
+      <label>
+        NEW NAME
+        <input required type="text" name="name" [(ngModel)]="newValue.name">
+      </label>
+      <label>
+        NEW Address
+        <input required type="text" name="address" [(ngModel)]="newValue.address">
+      </label>
+      <button type="submit" class="btn btn-danger">Edit</button>
+    </form>
+  </div>
+  <hr>
+</div>
+

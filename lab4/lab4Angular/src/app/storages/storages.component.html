@@ -1,0 +1,42 @@
+<div class="text-center">
+  <form #newStorage="ngForm" class='' (ngSubmit)="addNewStorage()">
+    <div>
+      <label >number Storage
+        <input name='name'  class='form-control' value='' type="number" [(ngModel)]="newStorageItem.number">
+      </label>
+    </div>
+    <div>
+      <label >Storage capacity
+        <input name='code'  class='form-control' value='' type="number" [(ngModel)]="newStorageItem.capacity">
+      </label>
+    </div>
+    <button type='submit' class='btn btn-primary'>Create</button>
+  </form>
+</div>
+<div *ngFor="let st of storage; index as i" class="singleStorage">
+  <h3>Склад "{{st.number}}" з місткістю - {{st.capacity}}</h3>
+  <h6>Товарів на складі - {{st.goods.length}}</h6>
+  <hr>
+  <form #add="ngForm" (ngSubmit)="addGood(st._id)">
+    <mat-form-field>
+      <mat-label>Оберіть товар який хочете добавити!</mat-label>
+      <mat-select  >
+        <mat-option (click)="getI(index)" *ngFor="let good of goods; index as index" [value]="index">
+          {{good.name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <button type="submit" class="btn btn-danger">Add</button>
+  </form>
+  <hr>
+  <button (click)="show(i)" type="submit" class="btn btn-primary">Показати товар</button>
+  <div class="allGoods" *ngIf="i === showId">
+    <p *ngFor="let good of st.goods">Товар {{good.name}} з країни {{good.country}} та номером {{good.code}}</p>
+  </div>
+  <form (ngSubmit)="deleteStorage(st._id)">
+    <button type='submit' class='btn btn-warning'>Видалити</button>
+  </form>
+</div>
+
+

@@ -1,0 +1,44 @@
+<div class="text-center">
+  <form #newGoods="ngForm" class='' (ngSubmit)="addNewGood()">
+    <div>
+      <label >Name
+        <input name='name'  class='form-control' value='' type="text" [(ngModel)]="newGoodItem.name">
+      </label>
+    </div>
+    <div>
+      <label >Code
+        <input name='code'  class='form-control' value='' type="number" [(ngModel)]="newGoodItem.code">
+      </label>
+    </div>
+    <div>
+      <label >country
+        <input name='country'  class='form-control' value='' type="text" [(ngModel)]="newGoodItem.country">
+      </label>
+    </div>
+
+    <br>
+    <button type='submit' class='btn btn-primary'>Create</button>
+  </form>
+    <h2>All Goods</h2>
+</div>
+<div *ngFor="let good of goods; index as i" class="singleGoods">
+  <hr>
+  <h4>Товар "{{good.name}}"; Країна - {{good.country}}; Код товара "#{{good.code}}"</h4>
+  <form (ngSubmit)="deleteGood(good._id)">
+    <button type='submit' class='btn btn-warning'>Delete</button>
+  </form> <button (click)="show(i)" type="submit" class="btn btn-primary">Edit</button>
+  <form #edit="ngForm" (ngSubmit)="editGood(good._id)" *ngIf="i === showId" >
+    <label>
+      NEW NAME
+      <input required type="text" name="name" [(ngModel)]="newValue.name">
+    </label>
+    <label>
+      NEW Countru
+      <input required type="text" name="country" [(ngModel)]="newValue.country">
+    </label>
+    <button type="submit" class="btn btn-danger">Edit</button>
+  </form>
+  <hr>
+</div>
+
+
